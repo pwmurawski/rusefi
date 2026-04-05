@@ -69,7 +69,7 @@ size_t flashSectorSize(flashsector_t sector) {
 	return 0;
 }
 
-#define TM_ID_GetFlashSize()	(*(__IO uint16_t *) (FLASHSIZE_BASE))
+#define TM_ID_GetFlashSize()	(*(__IO uint16_t *) (1024))
 
 uintptr_t getFlashAddrFirstCopy() {
 	/* last 128K sector on 512K devices */
